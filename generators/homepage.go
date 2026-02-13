@@ -6,12 +6,7 @@ import (
 )
 
 func HomepageGen() {
-	err := os.Remove("public/index.html")
-	if err != nil {
-		log.Fatal(err)
-		return
-	}
-	w, err := os.OpenFile("public/index.html", os.O_RDWR | os.O_CREATE, 0644)
+	w, err := os.OpenFile("public/index.html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatal(err)
 		return

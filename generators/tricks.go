@@ -63,12 +63,7 @@ func TricksGen() {
 		}
 	}
 
-	err = os.Remove("public/tricks.html")
-	if err != nil {
-		log.Fatal(err)
-		return
-	}
-	w, err := os.OpenFile("public/tricks.html", os.O_RDWR|os.O_CREATE, 0644)
+	w, err := os.OpenFile("public/tricks.html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -132,12 +127,7 @@ func TrickPageGen() {
 				}
 			}
 
-			err = os.Remove("public/tricks/" + id + ".html")
-			if err != nil {
-				log.Fatal(err)
-				return
-			}
-			w, err := os.OpenFile("public/tricks/"+id+".html", os.O_RDWR|os.O_CREATE, 0644)
+			w, err := os.OpenFile("public/tricks/"+id+".html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 			if err != nil {
 				log.Fatal(err)
 				return
@@ -179,12 +169,7 @@ func CombosGen() {
 		}
 	}
 
-	err = os.Remove("public/combos.html")
-	if err != nil {
-		log.Fatal(err)
-		return
-	}
-	w, err := os.OpenFile("public/combos.html", os.O_RDWR|os.O_CREATE, 0644)
+	w, err := os.OpenFile("public/combos.html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -238,12 +223,7 @@ func ComboPageGen() {
 				combo.Tricks = append(combo.Tricks, trick)
 			}
 
-			err = os.Remove("public/combos/" + id + ".html")
-			if err != nil {
-				log.Fatal(err)
-				return
-			}
-			w, err := os.OpenFile("public/combos/" + id + ".html", os.O_RDWR|os.O_CREATE, 0644)
+			w, err := os.OpenFile("public/combos/"+id+".html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 			if err != nil {
 				log.Fatal(err)
 				return

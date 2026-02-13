@@ -6,12 +6,7 @@ import (
 )
 
 func SloMoToolGen() {
-	err := os.Remove("public/slo-mo-tool.html")
-	if err != nil {
-		log.Fatal(err)
-		return
-	}
-	w, err := os.OpenFile("public/slo-mo-tool.html", os.O_RDWR | os.O_CREATE, 0644)
+	w, err := os.OpenFile("public/slo-mo-tool.html", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -22,4 +17,3 @@ func SloMoToolGen() {
 		return
 	}
 }
-
