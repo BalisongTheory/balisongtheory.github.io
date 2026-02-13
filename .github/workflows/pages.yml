@@ -21,7 +21,7 @@ jobs:
       id: build
       run: |
         go run -v .
-        ln -s ../static public
+        cp -r ./static ./public
 
     - name: Upload static files as artifact
       id: deployment
@@ -30,6 +30,10 @@ jobs:
         path: public/
 
   deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
