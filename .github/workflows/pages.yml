@@ -21,7 +21,7 @@ jobs:
       id: build
       run: |
         go run -v .
-        ln -s ./static ./public/static
+        ln -s ../static public
 
     - name: Upload static files as artifact
       id: deployment
