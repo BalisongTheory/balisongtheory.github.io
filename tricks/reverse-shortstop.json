@@ -3,8 +3,8 @@
     "description": "",
     "videos": [
         {
-            "filename": "hurbsflips.mov",
-            "format": "quicktime",
+            "filename": "hurbsflips.mp4",
+            "format": "mp4",
             "thumbnailImage": "hurbsflips-thumbnail.png",
             "credit": "@hurbsflips"
         },

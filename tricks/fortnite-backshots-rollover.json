@@ -3,8 +3,8 @@
     "description": "",
     "videos": [
         {
-            "filename": "gibbylikesknives.mov",
-            "format": "quicktime",
+            "filename": "gibbylikesknives.mp4",
+            "format": "mp4",
             "thumbnailImage": "gibbylikesknives-thumbnail.png",
             "credit": "@gibbylikesknives"
         }

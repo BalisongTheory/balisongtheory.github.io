@@ -3,14 +3,14 @@
     "description": "",
     "videos": [
         {
-            "filename": "otokonoko_flips.mov",
-            "format": "quicktime",
+            "filename": "otokonoko_flips.mp4",
+            "format": "mp4",
             "thumbnailImage": "otokonoko_flips-thumbnail.png",
             "credit": "@otokonoko_flips"
         },
         {
-            "filename": "threetnite.mov",
-            "format": "quicktime",
+            "filename": "threetnite.mp4",
+            "format": "mp4",
             "thumbnailImage": "threetnite-thumbnail.png",
             "credit": "@threetnite"
         }
