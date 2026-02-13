@@ -1,0 +1,12 @@
+{
+    "name": "Chaplin",
+    "description": "",
+    "videos": [
+        {
+            "filename": "chaplin.mp4",
+            "format": "mp4",
+            "thumbnailImage": "chaplin-thumbnail.png"
+        }
+    ],
+    "tags": ["chaplin"]
+}

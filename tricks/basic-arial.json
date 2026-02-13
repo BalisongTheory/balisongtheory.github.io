@@ -1,0 +1,12 @@
+{
+    "name": "Basic Arial",
+    "description": "",
+    "videos": [
+        {
+            "filename": "basic-arial.mp4",
+            "format": "mp4",
+            "thumbnailImage": "basic-arial-thumbnail.png"
+        }
+    ],
+    "tags": ["arial"]
+}

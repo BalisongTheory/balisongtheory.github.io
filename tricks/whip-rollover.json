@@ -1,0 +1,12 @@
+{
+    "name": "Whip Rollover",
+    "description": "",
+    "videos": [
+        {
+            "filename": "whip-rollover.mp4",
+            "thumbnailImage": "whip-rollover-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["rollover"]
+}

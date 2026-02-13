@@ -1,0 +1,12 @@
+{
+    "name": "Cherrypicker",
+    "description": "",
+    "videos": [
+        {
+            "filename": "cherrypicker.mp4",
+            "format": "mp4",
+            "thumbnailImage": "cherrypicker-thumbnail.png"
+        }
+    ],
+    "tags": ["rollover"]
+}

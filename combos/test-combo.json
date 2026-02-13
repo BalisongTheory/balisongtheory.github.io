@@ -1,0 +1,13 @@
+{
+    "name": "test combo",
+    "description": "",
+    "videos": [
+        {
+            "filename": "test-combo.mov",
+            "format": "quicktime",
+            "thumbnailImage": "test-combo-thumbnail.png"
+        }
+    ],
+    "tricks": ["reverse-fan", "whip-rollover", "reverse-icepick-arial"],
+    "tags": ["arial", "rollover"]
+}

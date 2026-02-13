@@ -1,0 +1,52 @@
+{{ define "head" }}
+<link href="/static/css/combopage.css" rel="stylesheet">
+<script src="/static/js/combopage.js"></script>
+{{ end }}
+
+{{ define "content" }}
+
+{{ if gt (len .Combo.Videos) 1 }}
+<div id="video-selector">
+    {{ range $i, $v := .Combo.Videos }}
+    <img class="video-{{ $i }}" src="/static/video/combos/{{ $.Combo.ID }}/{{ .ThumbnailImage }}" alt="{{ .Credit }}">
+    {{ end }}
+</div>
+{{ end }}
+
+<div id="video-container">
+{{ range $i, $v := .Combo.Videos }}
+    <video class="video-{{ $i }} combo-video" poster="/static/video/combos/{{ $.Combo.ID }}/{{ .ThumbnailImage }}" preload="metadata" controlslist="novolume" controls muted loop>
+        <source src="/static/video/combos/{{ $.Combo.ID }}/{{ .Filename }}" type="video/{{ .Format }}">
+    </video>
+    <p class="video-credit video-{{ $i }}-credit">{{ .Credit }}</p>
+{{ end }}
+</div>
+
+<div id="video-buttons">
+    <input class="video-speed-btn" id="video-speed-button-0" type="radio" name="video-speed-button" value="1" checked>
+    <label class="video-speed-label" for="video-speed-button-0">1.0x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-1" type="radio" name="video-speed-button" value="0.5">
+    <label class="video-speed-label" for="video-speed-button-1">0.5x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-2" type="radio" name="video-speed-button" value="0.25">
+    <label class="video-speed-label" for="video-speed-button-2">0.25x</label>
+</div>
+
+<h1>{{ .Combo.Name }}</h1>
+<p>{{ .Combo.Description }}</p>
+<small>tags: <code>{{ range .Combo.Tags }}{{ . }} {{ end }}</code></small>
+
+<h2>Tricks</h2>
+<div id="tricks-container">
+    {{ range .Combo.Tricks }}
+    <a class="trick" draggable="false" href="/tricks/{{ .ID }}">
+        <h3 class="trick-name">{{ .Name }}</h3>
+        <video poster="/static/video/tricks/{{ .ID }}/{{ (index .Videos 0).ThumbnailImage }}" preload="metadata" muted loop>
+            <source src="/static/video/tricks/{{ .ID }}/{{ (index .Videos 0).Filename }}" type="video/{{ (index .Videos 0).Format }}">
+        </video>
+    </a>
+    {{ end }}
+</div>
+
+{{ end }}

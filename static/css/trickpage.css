@@ -1,0 +1,90 @@
+#video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 8px;
+}
+
+#video-container p {
+    display: none;
+}
+
+#video-container video:first-child {
+    display: block;
+}
+
+#video-container p:first-of-type {
+    display: block;
+}
+
+#video-selector img {
+    width: 3em;
+    height: 3em;
+}
+
+.video-credit {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 0;
+    pointer-events: none;
+}
+
+.trick-video {
+    max-width: 100%;
+    max-height: 40em;
+    display: none;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.video-speed-label {
+    background-color: var(--button-bg);
+    border: solid 1px gray;
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+input[type=radio]:checked + label {
+    border: solid 1px lightgray;
+    background-color: var(--button-bg-active);
+}
+
+.video-speed-label:hover {
+    background-color: var(--button-bg-hover);
+}
+
+#combos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-auto-rows: 20em;
+    gap: 1em;
+}
+
+.combo {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: white;
+}
+
+.combo h3 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    margin: 0;
+    text-shadow: 0 0 3px black;
+}
+
+.combo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

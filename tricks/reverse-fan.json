@@ -1,0 +1,12 @@
+{
+    "name": "Reverse Fan",
+    "description": "",
+    "videos": [
+        {
+            "filename": "reverse-fan.mp4",
+            "thumbnailImage": "reverse-fan-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["fan"]
+}

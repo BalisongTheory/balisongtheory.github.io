@@ -1,0 +1,12 @@
+{
+    "name": "Thumb Rollover",
+    "description": "",
+    "videos": [
+        {
+            "filename": "thumb-rollover.mp4",
+            "thumbnailImage": "thumb-rollover-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["rollover"]
+}

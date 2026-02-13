@@ -1,0 +1,31 @@
+{{ define "base" }}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Title }} - BalisongTheory</title>
+        <link href="/static/css/global.css" rel="stylesheet">
+        {{ block "head" . }}
+        {{ end }}
+    </head>
+    <body>
+        <header>
+            <a href="/"><img src="/static/img/balisongtheorylogo.gif" alt="logo"></a>
+            <a href="/tricks"><img src="/static/img/tricks.gif" alt="tricks"></a>
+            <a href="/combos"><img src="/static/img/combos.png" alt="combos"></a>
+            <a href="/slo-mo-tool"><img src="/static/img/slo-mo-tool.gif" alt="slo-mo-tool"></a>
+        </header>
+
+        <div id="site-content">
+            {{ template "content" . }}
+        </div>
+
+        {{/* <footer>Created By @fr3dr</footer> */}}
+    </body>
+</html>
+{{ end }}
+
+{{ define "test-element" }}
+<p>test element</p>
+{{ end}}

@@ -1,0 +1,12 @@
+{
+    "name": "Quickopen",
+    "description": "",
+    "videos": [
+        {
+            "filename": "quickopen.mp4",
+            "thumbnailImage": "quickopen-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": []
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Reverse Shortstop",
+    "description": "",
+    "videos": [
+        {
+            "filename": "hurbsflips.mov",
+            "format": "quicktime",
+            "thumbnailImage": "hurbsflips-thumbnail.png",
+            "credit": "@hurbsflips"
+        },
+        {
+            "filename": "namazu.flips.mp4",
+            "format": "mp4",
+            "thumbnailImage": "namazu.flips-thumbnail.png",
+            "credit": "@namazu.flips"
+        }
+    ],
+    "tags": ["rollover"]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Reverse Arial",
+    "description": "",
+    "videos": [
+        {
+            "filename": "reverse-arial.mp4",
+            "thumbnailImage": "reverse-arial-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["arial"]
+}

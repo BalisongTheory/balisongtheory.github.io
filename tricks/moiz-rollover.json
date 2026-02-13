@@ -1,0 +1,19 @@
+{
+    "name": "Moiz Rollover",
+    "description": "",
+    "videos": [
+        {
+            "filename": "otokonoko_flips.mov",
+            "format": "quicktime",
+            "thumbnailImage": "otokonoko_flips-thumbnail.png",
+            "credit": "@otokonoko_flips"
+        },
+        {
+            "filename": "threetnite.mov",
+            "format": "quicktime",
+            "thumbnailImage": "threetnite-thumbnail.png",
+            "credit": "@threetnite"
+        }
+    ],
+    "tags": ["rollover"]
+}

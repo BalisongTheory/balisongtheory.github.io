@@ -1,0 +1,12 @@
+{
+    "name": "Basic Fan",
+    "description": "",
+    "videos": [
+        {
+            "filename": "basic-fan.mp4",
+            "format": "mp4",
+            "thumbnailImage": "basic-fan-thumbnail.png"
+        }
+    ],
+    "tags": ["fan"]
+}

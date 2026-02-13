@@ -1,0 +1,13 @@
+{
+    "name": "Pirimity/Oxymity Fan",
+    "description": "",
+    "videos": [
+        {
+            "filename": "otokonoko_flips.mov",
+            "format": "quicktime",
+            "thumbnailImage": "otokonoko_flips-thumbnail.png",
+            "credit": "@otokonoko_flips"
+        }
+    ],
+    "tags": ["fan"]
+}

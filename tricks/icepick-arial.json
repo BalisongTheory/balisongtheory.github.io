@@ -1,0 +1,12 @@
+{
+    "name": "Icepick Arial",
+    "description": "",
+    "videos": [
+        {
+            "filename": "icepick-arial.mp4",
+            "format": "mp4",
+            "thumbnailImage": "icepick-arial-thumbnail.png"
+        }
+    ],
+    "tags": ["arial", "icepick"]
+}

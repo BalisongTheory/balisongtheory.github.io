@@ -1,0 +1,12 @@
+{
+    "name": "Infinity Ladder",
+    "description": "",
+    "videos": [
+        {
+            "filename": "infinity-ladder.mp4",
+            "format": "mp4",
+            "thumbnailImage": "infinity-ladder-thumbnail.png"
+        }
+    ],
+    "tags": ["ladder"]
+}

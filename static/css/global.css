@@ -1,0 +1,53 @@
+:root {
+    color-scheme: light dark;
+
+    --bg: #fdfdfd;
+    --fg: #111111;
+    --header-bg: #dcdcdd;
+
+    @media (prefers-color-scheme: dark) {
+        --bg: #222222;
+        --fg: #eeeeee;
+        --header-bg: #333333;
+        --button-bg: #333333;
+        --button-bg-hover: #444444;
+        --button-bg-active: #555555;
+    }
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+header {
+    box-shadow: 0 1px 10px black;
+    vertical-align: middle;
+}
+
+header > a > img {
+    height: 4em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fg);
+}
+
+mark {
+    text-shadow: none;
+}
+
+#site-content {
+    margin: 1em;
+}

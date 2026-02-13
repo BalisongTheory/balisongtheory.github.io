@@ -1,0 +1,20 @@
+{{ define "head" }}
+<link href="/static/css/tricks.css" rel="stylesheet">
+<script src="/static/js/tricks.js"></script>
+{{ end }}
+
+{{ define "content" }}
+<h1>Tricktionary</h1>
+<input id="trick-search" type="search" name="trick-search" placeholder="Search..." />
+<div id="tricks-container">
+    {{ range .Tricks }}
+    <a class="trick" draggable="false" href="/tricks/{{ .ID }}">
+        <h3 class="trick-name">{{ .Name }}</h3>
+        <small><code class="trick-tags">{{ range .Tags }}{{ . }} {{ end }}</code></small>
+        <video poster="/static/video/tricks/{{ .ID }}/{{ (index .Videos 0).ThumbnailImage }}" preload="metadata" muted loop>
+            <source src="/static/video/tricks/{{ .ID }}/{{ (index .Videos 0).Filename }}" type="video/{{ (index .Videos 0).Format }}">
+        </video>
+    </a>
+    {{ end }}
+</div>
+{{ end }}

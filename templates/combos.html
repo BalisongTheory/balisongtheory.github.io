@@ -1,0 +1,20 @@
+{{ define "head" }}
+<link href="/static/css/combos.css" rel="stylesheet">
+<script src="/static/js/combos.js"></script>
+{{ end }}
+
+{{ define "content" }}
+<h1>Combos</h1>
+<input id="combo-search" type="search" name="combos-search" placeholder="Search..." />
+<div id="combos-container">
+    {{ range .Combos }}
+    <a class="combo" draggable="false" href="/combos/{{ .ID }}">
+        <h3 class="combo-name">{{ .Name }}</h3>
+        <small><code class="combo-tags">{{ range .Tags }}{{ . }} {{ end }}</code></small>
+        <video poster="/static/video/combos/{{ .ID }}/{{ (index .Videos 0).ThumbnailImage }}" preload="metadata" muted loop>
+            <source src="/static/video/combos/{{ .ID }}/{{ (index .Videos 0).Filename }}" type="video/{{ (index .Videos 0).Format }}">
+        </video>
+    </a>
+    {{ end }}
+</div>
+{{ end }}

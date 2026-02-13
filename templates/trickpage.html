@@ -1,0 +1,55 @@
+{{ define "head" }}
+<link href="/static/css/trickpage.css" rel="stylesheet">
+<script src="/static/js/trickpage.js"></script>
+{{ end }}
+
+{{ define "content" }}
+
+{{ if gt (len .Trick.Videos) 1 }}
+<div id="video-selector">
+    {{ range $i, $v := .Trick.Videos }}
+    <img class="video-{{ $i }}" src="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" alt="{{ .Credit }}">
+    {{ end }}
+</div>
+{{ end }}
+
+<div id="video-container">
+{{ range $i, $v := .Trick.Videos }}
+    <video class="video-{{ $i }} trick-video" poster="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" preload="metadata" controlslist="novolume" controls muted loop>
+        <source src="/static/video/tricks/{{ $.Trick.ID }}/{{ .Filename }}" type="video/{{ .Format }}">
+    </video>
+    <p class="video-credit video-{{ $i }}-credit">{{ .Credit }}</p>
+{{ end }}
+</div>
+
+<div id="video-buttons">
+    <input class="video-speed-btn" id="video-speed-button-0" type="radio" name="video-speed-button" value="1" checked>
+    <label class="video-speed-label" for="video-speed-button-0">1.0x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-1" type="radio" name="video-speed-button" value="0.5">
+    <label class="video-speed-label" for="video-speed-button-1">0.5x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-2" type="radio" name="video-speed-button" value="0.25">
+    <label class="video-speed-label" for="video-speed-button-2">0.25x</label>
+</div>
+
+<h1>{{ .Trick.Name }}</h1>
+<p>{{ .Trick.Description }}</p>
+<small>tags: <code>{{ range .Trick.Tags }}{{ . }} {{ end }}</code></small>
+
+{{ if gt (len .Trick.Combos) 0 }}
+<h2>Combos</h2>
+<div id="combos-container">
+    {{ range .Trick.Combos }}
+    <a class="combo" draggable="false" href="/combos/{{ .ID }}">
+        <h3 class="combo-name">{{ .Name }}</h3>
+        <video poster="/static/video/combos/{{ .ID }}/{{ (index .Videos 0).ThumbnailImage }}" preload="metadata" muted loop>
+            <source src="/static/video/combos/{{ .ID }}/{{ (index .Videos 0).Filename }}" type="video/{{ (index .Videos 0).Format }}">
+        </video>
+    </a>
+    {{ end }}
+</div>
+{{ end }}
+
+
+{{ end }}

@@ -1,0 +1,12 @@
+{
+    "name": "Reverse Chaplin",
+    "description": "",
+    "videos": [
+        {
+            "filename": "reverse-chaplin.mp4",
+            "thumbnailImage": "reverse-chaplin-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["chaplin"]
+}

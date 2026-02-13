@@ -1,0 +1,19 @@
+{
+    "name": "Reverse Cherrypicker",
+    "description": "",
+    "videos": [
+        {
+            "filename": "jaeum.mp4",
+            "format": "mp4",
+            "thumbnailImage": "jaeum-thumbnail.png",
+            "credit": "@jaeum"
+        },
+        {
+            "filename": "02.infi.mov",
+            "format": "quicktime",
+            "thumbnailImage": "02.infi-thumbnail.png",
+            "credit": "@02.infi"
+        }
+    ],
+    "tags": ["rollover"]
+}

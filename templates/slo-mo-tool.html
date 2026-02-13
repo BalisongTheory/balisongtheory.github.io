@@ -1,0 +1,20 @@
+{{ define "head" }}
+<link href="/static/css/slo-mo-tool.css" rel="stylesheet">
+<script src="/static/js/slo-mo-tool.js"></script>
+{{ end }}
+
+{{ define "content" }}
+<input type="text" placeholder="video link" id="link-input" />
+<video controlslist="novolume" controls muted loop></video>
+
+<div id="video-buttons">
+    <input class="video-speed-btn" id="video-speed-button-0" type="radio" name="video-speed-button" value="1" checked>
+    <label class="video-speed-label" for="video-speed-button-0">1.0x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-1" type="radio" name="video-speed-button" value="0.5">
+    <label class="video-speed-label" for="video-speed-button-1">0.5x</label>
+
+    <input class="video-speed-btn" id="video-speed-button-2" type="radio" name="video-speed-button" value="0.25">
+    <label class="video-speed-label" for="video-speed-button-2">0.25x</label>
+</div>
+{{ end }}

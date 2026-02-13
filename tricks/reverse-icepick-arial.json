@@ -1,0 +1,12 @@
+{
+    "name": "Reverse Icepick Arial",
+    "description": "",
+    "videos": [
+        {
+            "filename": "reverse-icepick-arial.mp4",
+            "thumbnailImage": "reverse-icepick-arial-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["arial", "icepick"]
+}

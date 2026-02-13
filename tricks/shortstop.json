@@ -1,0 +1,12 @@
+{
+    "name": "Shortstop",
+    "description": "",
+    "videos": [
+        {
+            "filename": "shortstop.mp4",
+            "thumbnailImage": "shortstop-thumbnail.png",
+            "format": "mp4"
+        }
+    ],
+    "tags": ["rollover", "icepick"]
+}
