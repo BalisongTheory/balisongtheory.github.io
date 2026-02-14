@@ -1,0 +1,13 @@
+{
+    "name": "Figure 8",
+    "description": "",
+    "videos": [
+        {
+            "filename": "oceancarl.mp4",
+            "format": "mp4",
+            "thumbnailImage": "oceancarl-thumbnail.png",
+            "credit": "@oceancarl"
+        }
+    ],
+    "tags": []
+}
