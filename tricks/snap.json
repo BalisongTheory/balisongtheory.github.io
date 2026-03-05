@@ -1,0 +1,19 @@
+{
+    "name": "Snap",
+    "description": "",
+    "videos": [
+        {
+            "filename": "middle-snap-otokonoko_flips.mp4",
+            "format": "mp4",
+            "thumbnailImage": "middle-snap-otokonoko_flips-thumbnail.png",
+            "credit": "@otokonoko_flips"
+        },
+        {
+            "filename": "ring-snap-otokonoko_flips.mp4",
+            "format": "mp4",
+            "thumbnailImage": "ring-snap-otokonoko_flips-thumbnail.png",
+            "credit": "@otokonoko_flips"
+        }
+    ],
+    "tags": ["chaplin"]
+}
