@@ -1,4 +1,10 @@
 {{ define "head" }}
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="video.other" />
+<meta property="og:url" content="https://balisongtheory.com/tricks/{{ .Trick.ID }}" />
+<meta property="og:image" content="https://balisongtheory.com/static/video/tricks/{{ .Trick.ID }}/{{ (index .Trick.Videos 0).ThumbnailImage }}" />
+<meta property="og:site_name" content="BalisongTheory" />
+<meta property="og:video" content="https://balisongtheory.com/static/video/tricks/{{ .Trick.ID }}/{{ (index .Trick.Videos 0).Filename }}" />
 <link href="/static/css/trickpage.css" rel="stylesheet">
 <script src="/static/js/trickpage.js"></script>
 {{ end }}
