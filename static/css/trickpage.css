@@ -1,3 +1,7 @@
+#video-selector img {
+    object-fit: cover;
+}
+
 #video-container {
     position: relative;
     top: 0;
