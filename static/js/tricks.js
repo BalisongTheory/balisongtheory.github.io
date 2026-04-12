@@ -35,13 +35,13 @@ function main() {
         const video = element.querySelector("video");
         video.pause();
         element.onmouseenter = () => {
-            video.fastSeek(0);
+            video.currentTime = 0;
             video.play();
         };
 
         element.onmouseleave = () => {
             video.pause();
-            video.fastSeek(0);
+            video.currentTime = 0;
         };
     });
 }

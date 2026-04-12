@@ -17,7 +17,7 @@ function main() {
             videos.forEach(video => {
                 video.style.display = "none";
                 video.pause();
-                video.fastSeek(0);
+                video.currentTime = 0;
             });
             document.querySelectorAll("#video-container .video-credit").forEach(credit => {
                 credit.style.display = "none";
@@ -32,13 +32,13 @@ function main() {
         const video = element.querySelector("video");
         video.pause();
         element.onmouseenter = () => {
-            video.fastSeek(0);
+            video.currentTime = 0;
             video.play();
         };
 
         element.onmouseleave = () => {
             video.pause();
-            video.fastSeek(0);
+            video.currentTime = 0;
         };
     });
 }
