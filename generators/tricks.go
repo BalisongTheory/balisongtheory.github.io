@@ -69,7 +69,7 @@ func TricksGen() {
 		return
 	}
 
-	err = executeBase(w, "templates/tricks.html", map[string]any{"Title": "Tricktionary", "Tricks": tricks})
+	err = executeBase(w, "templates/tricks.html", "Tricktionary", "/tricks", map[string]any{"Tricks": tricks})
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -133,7 +133,7 @@ func TrickPageGen() {
 				return
 			}
 
-			err = executeBase(w, "templates/trickpage.html", map[string]any{"Title": trick.Name, "Trick": trick})
+			err = executeBase(w, "templates/trickpage.html", trick.Name, "/tricks/"+trick.ID, map[string]any{"Trick": trick})
 			if err != nil {
 				log.Fatalln("error executing base template:", err)
 				return
@@ -175,7 +175,7 @@ func CombosGen() {
 		return
 	}
 
-	err = executeBase(w, "templates/combos.html", map[string]any{"Title": "Combos", "Combos": combos})
+	err = executeBase(w, "templates/combos.html", "Combos", "/combos", map[string]any{"Combos": combos})
 	if err != nil {
 		log.Fatal(err)
 		return
@@ -229,7 +229,7 @@ func ComboPageGen() {
 				return
 			}
 
-			err = executeBase(w, "templates/combopage.html", map[string]any{"Title": combo.Name, "Combo": combo})
+			err = executeBase(w, "templates/combopage.html", combo.Name, "/combos/"+combo.ID, map[string]any{"Combo": combo})
 			if err != nil {
 				log.Fatal("error executing base template:", err)
 				return

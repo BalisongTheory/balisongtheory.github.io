@@ -11,7 +11,7 @@ func SloMoToolGen() {
 		log.Fatal(err)
 		return
 	}
-	err = executeBase(w, "templates/slo-mo-tool.html", map[string]any{"Title": "SLO-MO Tool"})
+	err = executeBase(w, "templates/slo-mo-tool.html", "SLO-MO Tool", "/slo-mo-tool", nil)
 	if err != nil {
 		log.Fatal(err)
 		return

@@ -11,7 +11,7 @@ func HomepageGen() {
 		log.Fatal(err)
 		return
 	}
-	err = executeBase(w, "./templates/homepage.html", map[string]any{"Title": "Homepage"})
+	err = executeBase(w, "./templates/homepage.html", "Homepage", "/", nil)
 	if err != nil {
 		log.Fatal(err)
 		return
