@@ -21,4 +21,5 @@ func main() {
 	generators.CombosGen()
 	generators.ComboPageGen()
 	generators.SloMoToolGen()
+	generators.PageNotFoundGen()
 }
