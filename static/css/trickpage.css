@@ -31,7 +31,8 @@
     top: 1rem;
     left: 1rem;
     margin: 0;
-    pointer-events: none;
+    color: var(--video-text);
+    text-shadow: 0 0 3px black;
 }
 
 .trick-video {
@@ -40,7 +41,7 @@
     display: none;
 }
 
-input[type=radio] {
+.video-speed-btn[type=radio] {
     position: absolute;
     opacity: 0;
     width: 0;
@@ -50,18 +51,18 @@ input[type=radio] {
 
 .video-speed-label {
     background-color: var(--button-bg);
-    border: solid 1px gray;
+    border: solid 1px var(--button-border);
     border-radius: 4px;
     padding: 0 2px;
 }
 
-input[type=radio]:checked + label {
-    border: solid 1px lightgray;
-    background-color: var(--button-bg-active);
-}
-
 .video-speed-label:hover {
     background-color: var(--button-bg-hover);
+}
+
+.video-speed-btn[type=radio]:checked + label {
+    border: solid 1px var(--button-border-active);
+    background-color: var(--button-bg-active);
 }
 
 #combos-container {
@@ -76,7 +77,6 @@ input[type=radio]:checked + label {
     overflow: hidden;
     border: 1px solid gray;
     border-radius: 8px;
-    color: white;
 }
 
 .combo h3 {
@@ -84,6 +84,7 @@ input[type=radio]:checked + label {
     top: 1em;
     left: 1em;
     margin: 0;
+    color: var(--video-text);
     text-shadow: 0 0 3px black;
 }
 

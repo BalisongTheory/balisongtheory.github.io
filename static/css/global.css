@@ -3,15 +3,21 @@
 
     --bg: #fdfdfd;
     --fg: #111111;
-    --header-bg: #dcdcdd;
+    --video-text: #EEEEEE;
+    --button-bg: #EEEEEE;
+    --button-bg-hover: #DDDDDD;
+    --button-bg-active: #CCCCCC;
+    --button-border: #999999;
+    --button-border-active: #555555;
 
     @media (prefers-color-scheme: dark) {
         --bg: #222222;
         --fg: #eeeeee;
-        --header-bg: #333333;
         --button-bg: #333333;
         --button-bg-hover: #444444;
         --button-bg-active: #555555;
+        --button-border: #777777;
+        --button-border-active: #AAAAAA;
     }
 }
 
