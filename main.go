@@ -20,6 +20,5 @@ func main() {
 	generators.TrickPageGen()
 	generators.CombosGen()
 	generators.ComboPageGen()
-	generators.SloMoToolGen()
 	generators.PageNotFoundGen()
 }
