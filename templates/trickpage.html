@@ -14,17 +14,19 @@
 {{ if gt (len .Trick.Videos) 1 }}
 <div id="video-selector">
     {{ range $i, $v := .Trick.Videos }}
-    <img class="video-{{ $i }}" src="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" alt="{{ .Credit }}">
+    <img class="video-{{ $i }}" draggable="false" src="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" alt="{{ .Credit }}">
     {{ end }}
 </div>
 {{ end }}
 
 <div id="video-container">
 {{ range $i, $v := .Trick.Videos }}
-    <video class="video-{{ $i }} trick-video" poster="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" preload="metadata" controlslist="novolume" controls muted loop>
-        <source src="/static/video/tricks/{{ $.Trick.ID }}/{{ .Filename }}" type="video/{{ .Format }}">
-    </video>
-    <p class="video-credit video-{{ $i }}-credit">{{ .Credit }}</p>
+    <div class="video-{{ $i }}">
+        <video class="trick-video" poster="/static/video/tricks/{{ $.Trick.ID }}/{{ .ThumbnailImage }}" preload="metadata" controlslist="novolume" controls muted loop>
+            <source src="/static/video/tricks/{{ $.Trick.ID }}/{{ .Filename }}" type="video/{{ .Format }}">
+        </video>
+        <p class="video-credit">{{ .Credit }}</p>
+    </div>
 {{ end }}
 </div>
 

@@ -2,6 +2,7 @@ window.onload = main;
 
 function main() {
     const videos = document.querySelectorAll(".trick-video");
+    var currentVideo = document.querySelector("#video-container div video");
 
     document.querySelectorAll(".video-speed-btn").forEach(button => {
         button.onclick = () => {
@@ -11,19 +12,14 @@ function main() {
         };
     });
 
-    document.querySelectorAll("img").forEach(element => {
+    document.querySelectorAll("#video-selector img").forEach(element => {
         element.onclick = () => {
-            videos.forEach(video => {
-                video.style.display = "none";
-                video.pause();
-                video.currentTime = 0;
-            });
-            document.querySelectorAll("#video-container .video-credit").forEach(credit => {
-                credit.style.display = "none";
-            });
+            currentVideo.pause();
+            currentVideo.currentTime = 0;
+            currentVideo.parentElement.style.display = "none";
 
             document.querySelector("#video-container ." + element.className).style.display = "block";
-            document.querySelector("#video-container ." + element.className + "-credit").style.display = "block";
+            currentVideo = document.querySelector("#video-container ." + element.className + " video");
         };
     });
 

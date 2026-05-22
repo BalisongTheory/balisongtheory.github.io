@@ -1,3 +1,12 @@
+#video-selector img {
+    object-fit: cover;
+}
+
+#video-selector img {
+    width: 3em;
+    height: 3em;
+}
+
 #video-container {
     position: relative;
     top: 0;
@@ -5,21 +14,12 @@
     margin-bottom: 8px;
 }
 
-#video-container p {
+#video-container div {
     display: none;
 }
 
-#video-container video:first-child {
+#video-container div:first-child {
     display: block;
-}
-
-#video-container p:first-of-type {
-    display: block;
-}
-
-#video-selector img {
-    width: 3em;
-    height: 3em;
 }
 
 .video-credit {
