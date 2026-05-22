@@ -1,0 +1,13 @@
+{
+    "name": "Beginner Rollover Combo",
+    "description": "",
+    "videos": [
+        {
+            "filename": "beginner-rollover-combo.mp4",
+            "format": "mp4",
+            "thumbnailImage": "beginner-rollover-combo-thumbnail.png"
+        }
+    ],
+    "tricks": ["whip-rollover", "thumb-rollover"],
+    "tags": ["rollover"]
+}
