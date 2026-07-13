@@ -1,10 +1,12 @@
 #video-selector img {
     object-fit: cover;
-}
-
-#video-selector img {
     width: 3em;
     height: 3em;
+    border: 0 var(--button-border-active) solid;
+}
+
+#video-selector img:first-child {
+    border-width: 3px;
 }
 
 #video-container {
